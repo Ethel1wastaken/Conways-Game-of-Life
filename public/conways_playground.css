@@ -1,0 +1,14 @@
+#grid {
+    background-color: grey;
+    border: 2px solid black;
+    width: fit-content;
+    height: fit-content;
+} 
+
+.cell {
+    width: 20px;
+    height: 20px;
+    background-color: grey;
+    border: 1px solid black;
+    gap: 2px;
+}
