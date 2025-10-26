@@ -75,7 +75,8 @@ function checkCell(state, row, col) {
     }
 }
 
-let state = [
+function resetState() {
+    let newState = [
     [0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
     [1, 0, 1, 0, 0, 0, 0, 0, 0, 0],
     [0, 1, 1, 0, 0, 0, 0, 0, 0, 0],
@@ -86,6 +87,46 @@ let state = [
     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-];
+    ];
 
-setInterval(mainLoop, 400);
+    return newState;
+}
+
+function clearState(state) {
+    const rows = state.length;
+    const cols = state[0].length;
+
+    for(let r=0; r<rows; r++) {
+        for(let c=0; c<cols; c++) {
+            state[r][c] = 0;
+        }
+    }
+    return state;
+}
+
+let state = resetState();
+renderGrid(state);
+
+let intervalId = null;
+document.getElementById("start").onclick = function() {
+    if (intervalId) {
+        clearInterval(intervalId);
+        intervalId = null;
+        document.getElementById("start").innerText = "▶";
+    }
+    else {
+        mainLoop();
+        intervalId = setInterval(mainLoop, 400);
+        document.getElementById("start").innerText = "⏸";
+    }
+}
+
+document.getElementById("reset").onclick = function() {
+    state = resetState();
+    renderGrid(state);
+}
+
+document.getElementById("clear").onclick = function() {
+    state = clearState(state);
+    renderGrid(state);
+}

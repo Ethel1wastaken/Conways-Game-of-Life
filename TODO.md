@@ -1,7 +1,7 @@
 # Immediate TODO
 - [] Make infinite grid
 - [] Allow clickable grid
-- [] Add button functionality
+- [] Improve button functionality
 - [] Add generation/population tracker
 
 # Future TODO
