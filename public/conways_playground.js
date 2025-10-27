@@ -1,3 +1,8 @@
+import { glider } from "./patterns/glider.js";
+import { pulsar } from "./patterns/pulsar.js";
+import { pentomino } from "./patterns/pentomino.js";
+import { gosper } from "./patterns/gosper.js";
+
 function mainLoop() {
     renderGrid(state);
     state = nextGeneration(state);
@@ -6,18 +11,24 @@ function mainLoop() {
 
 
 function renderGrid(state) {
-    const grid = document.getElementById("grid");
-    grid.innerHTML = "";
+    const mainEl = document.querySelector("main");
+    const existing = document.getElementById("grid");
+    if (existing) existing.remove();
+
+    const gridEl = document.createElement("section");
+    gridEl.id = "grid";
+    mainEl.appendChild(gridEl);
 
     const rows = state.length;
     const cols = state[0].length;
 
     for(let r=0; r<rows; r++) {
-        const row = document.createElement("tr");
-        grid.appendChild(row);
+        const row = document.createElement("div");
+        row.classList.add("row");
+        gridEl.appendChild(row);
 
         for(let c=0; c<cols; c++) {
-            const cell = document.createElement("td");
+            const cell = document.createElement("div");
             cell.classList.add("cell");
             row.appendChild(cell);
 
@@ -76,19 +87,7 @@ function checkCell(state, row, col) {
 }
 
 function resetState() {
-    let newState = [
-    [0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
-    [1, 0, 1, 0, 0, 0, 0, 0, 0, 0],
-    [0, 1, 1, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    ];
-
+    let newState = gosper;
     return newState;
 }
 
@@ -116,7 +115,7 @@ document.getElementById("start").onclick = function() {
     }
     else {
         mainLoop();
-        intervalId = setInterval(mainLoop, 400);
+        intervalId = setInterval(mainLoop, 200);
         document.getElementById("start").innerText = "⏸";
     }
 }
