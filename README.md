@@ -16,7 +16,7 @@ Conway's PlayGround is the hub for all things related to [Conway's Game of Life]
 6) Project Edit: Where you build and modify lifeforms. Contains features other simulators have, such as a speed slider, canvas size editor, population and generation tracker, etc. The backpack is accessible from a minimized tab, allowing the user to drag and drop other lifeforms into their project. When saving/sharing the project, there is an option to save the project either at its current generation, or the first generation.
 
 ## Wireframe
-The working user interface for Conway's PlayGround may be accessed at this [link](https://www.canva.com/design/DAG2zR02FDs/DpkxQuONIKW5XFavxaDppg/edit?utm_content=DAG2zR02FDs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton). Note that the link may only be accessed by accounts under the PSHS Canva Education Team.
+The working user interface for Conway's PlayGround may be accessed at this [link](https://www.canva.com/design/DAG2zR02FDs/DpkxQuONIKW5XFavxaDppg/edit?utm_content=DAG2zR02FDs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton). Note that the link is only accessible by accounts under the PSHS Canva Education Team.
 
 ### **Home Page**
 ![Account Home Page](./assets/[CS3]%20Q2%20Project%20Proposal/Home%20Page.png "Home Page")
