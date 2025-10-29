@@ -57,4 +57,5 @@ Due to the technical nature of our website, JS will be used often. More specific
 1. Project editing and management: An intetactive grid for making lifeforms, as well as save and upload function
 2. Accounts: Logging in, commenting on projects, etc.
 3. Sharing: Making sure shared projects show up on the website
+
 This is not a finalized list, and its contents may change over the course of this website's development.
