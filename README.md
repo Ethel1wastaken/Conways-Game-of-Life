@@ -46,10 +46,10 @@ The working user interface for Conway's PlayGround may be accessed at this [link
 ### Footer
 ![Search via Filters](./assets/[CS3]%20Q2%20Project%20Proposal/Footer.png)
 
-**proposal outline/stuff**
-- website title/s
-- logo
-- description (1-2 paragraphs)
-- outline of web pages (w/ breaks)
-- clear explanation of js implementation,
-- ui (working)
+## JavaScript Implementation
+
+Due to the technical nature of our website, JS will be used often. More specifically, we plan to use JS in the following:
+1. Project editing and management: An intetactive grid for making lifeforms, as well as save and upload function
+2. Accounts: Logging in, commenting on projects, etc.
+3. Sharing: Making sure shared projects show up on the website
+This is not a finalized list, and its contents may change over the course of this website's development.
