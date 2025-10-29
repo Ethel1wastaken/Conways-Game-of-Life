@@ -9,6 +9,43 @@ Conway's PlayGround is the hub for all things related to [Conway's Game of Life]
 
 ## Website Breakdown
 1) 
+
+## Wireframe
+The working user interface for Conway's PlayGround may be accessed at this [link](https://www.canva.com/design/DAG2zR02FDs/DpkxQuONIKW5XFavxaDppg/edit?utm_content=DAG2zR02FDs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton). Note that the link may only be accessed by accounts under the PSHS Canva Education Team.
+
+### **Home Page**
+![Account Home Page](./assets/[CS3]%20Q2%20Project%20Proposal/Home%20Page.png "Home Page")
+
+### Home Page (Search Bar)
+![Search via Filters](./assets/[CS3]%20Q2%20Project%20Proposal/Home%20Page%20w_%20dropdown.png)
+
+### Home Page (Search Bar)
+![Search via Filters](./assets/[CS3]%20Q2%20Project%20Proposal/Home%20Page%20[Search].png)
+
+### Home Page (Search Bar - Filters)
+![Search via Filters](./assets/[CS3]%20Q2%20Project%20Proposal/Home%20Page%20[Search]%20(2).png)
+
+### Backpack
+![Search via Filters](./assets/[CS3]%20Q2%20Project%20Proposal/Backpack.png)
+
+### Backpack - Uncollapsed
+![Search via Filters](./assets/[CS3]%20Q2%20Project%20Proposal/Backpack%20-%20Uncollapsed.png)
+
+### Backpack - My Creations
+![Search via Filters](./assets/[CS3]%20Q2%20Project%20Proposal/Backpack%20-%20Uncollapsed%20(2).png)
+
+### View Project
+![Search via Filters](./assets/[CS3]%20Q2%20Project%20Proposal/File%20View.png)
+
+### Create Project
+![Search via Filters](./assets/[CS3]%20Q2%20Project%20Proposal/Create%20Project.png)
+
+### Save Project
+![Search via Filters](./assets/[CS3]%20Q2%20Project%20Proposal/Save%20Project.png)
+
+### Footer
+![Search via Filters](./assets/[CS3]%20Q2%20Project%20Proposal/Footer.png)
+
 **proposal outline/stuff**
 - website title/s
 - logo
